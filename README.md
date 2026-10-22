@@ -1,16 +1,45 @@
-# React + Vite
+# Tribha
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tribha is a digital solutions and marketing platform built to help businesses level up their online presence with modern web tech, branding, and custom AI tools. This was coded for practice as an intern.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend:** React.js, Tailwind CSS, Lucide Icons, Vite
+- **Backend:** Node.js, Express.js
+- **Database & ORM:** PostgreSQL, Prisma ORM
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How to Run It Locally
 
-## Expanding the ESLint configuration
+### 1. Get the Backend Running
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd server
+npm install
+```
+
+Create a `.env` file in the `server` folder with your database URL:
+
+```env
+PORT=5000
+DATABASE_URL="postgresql://username:password@localhost:5432/tribha_db?schema=public"
+```
+
+Run your migrations and start the server:
+
+```bash
+npx prisma migrate dev --name init
+npm run dev
+```
+
+### 2. Get the Frontend Running
+
+Open a new terminal tab and start the client:
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+Head over to `http://localhost:5173`.
