@@ -63,7 +63,7 @@ export default function Navbar({ theme, onToggleTheme }) {
       >
 
         <a
-          href="#home"
+          href="/"
           onClick={closeMenu}
           aria-label="Tribha Digital Solutions home"
           className="group flex items-center gap-2 sm:gap-3"

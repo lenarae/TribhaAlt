@@ -1,1 +1,0 @@
-Node.js  Express.js  PostgreSQL Prisma ORM

@@ -36,7 +36,7 @@ export default function Hero() {
 
           <div className="mt-6 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row sm:items-center sm:justify-center sm:gap-4 2xl:mt-10 2xl:gap-6">
             <a
-              href="#contact"
+              href="/login"
               className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#4775E8] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#385FC7] hover:shadow-blue-500/30 sm:w-auto sm:py-4 2xl:px-9 2xl:py-5 2xl:text-xl"
             >
               <span>Start a project</span>
@@ -128,9 +128,12 @@ export default function Hero() {
                   <br></br>
                 </div>
 
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#4775E8] via-[#7650E8] to-[#55C96B] text-white shadow-lg shadow-blue-500/20 2xl:h-14 2xl:w-14 2xl:rounded-2xl">
+                <a href="/login">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#4775E8] via-[#7650E8] to-[#55C96B] text-white shadow-lg shadow-blue-500/20 2xl:h-14 2xl:w-14 2xl:rounded-2xl">
                   <ArrowUpRight size={20} className="2xl:h-7 2xl:w-7" />
-                </span>
+                  </span> 
+                </a>
+                
               </div>
             </div>
           </div>
